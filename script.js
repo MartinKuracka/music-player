@@ -15,17 +15,17 @@ let songIndex = 0;
 // Music
 const songs = [
     {
-        name: 'Jacinto-1',
+        name: 'jacinto-1',
         title: 'Electric Chill Machine',
         artist: 'Jacinto Design'
     },
     {
-        name: 'Jacinto-2',
+        name: 'jacinto-2',
         title: 'Second Song',
         artist: 'Jacinto Design'
     },
     {
-        name: 'Jacinto-3',
+        name: 'jacinto-3',
         title: 'third song',
         artist: 'Jacinto Design'
     },
