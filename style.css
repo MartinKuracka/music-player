@@ -18,6 +18,9 @@ body {
 }
 
 .player-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 500px;
   width: 400px;
   background-color: #d9dbdd;
@@ -30,11 +33,12 @@ body {
 }
 
 .img-container {
+  align-self: center;
   position: relative;
   height: 300px;
   width: 300px;
   top: -50px;
-  left: 50px;
+  /* left: 50px; */
 }
 
 .img-container img {
@@ -127,7 +131,14 @@ h3 {
   }
 
   .img-container {
-    left: 29px;
+    /* left: 29px; */
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 70vw;
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: -50px;
   }
 
   h2 {
@@ -137,9 +148,6 @@ h3 {
   h3 {
     font-size: 15px;
   }
-
-  .player-controls {
-    top: -10px;
-    left: 100px;
-  }
 }
+
+
