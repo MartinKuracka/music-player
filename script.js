@@ -9,6 +9,8 @@ const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
+// Current Song
+let songIndex = 0;
 
 // Music
 const songs = [
@@ -41,9 +43,6 @@ const addSongData = (song) => {
     myAudio.src = `music/${song.name}.mp3`;
     image.src = `img/${song.name}.jpg`;
 };
-
-// Current Song
-let songIndex = 0;
 
 //  Default song is not playing
 isPlaying = false
