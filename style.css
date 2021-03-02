@@ -1,4 +1,6 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,19 +13,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-family: 'Anton', sans-serif;
   font-size: 12px;
 }
 
+.player-container {
+  height: 500px;
+  width: 400px;
+  background-color: #d9dbdd;
+  border-radius: 20px;
+  box-shadow: 5px 10px 30px 5px rgba(0, 0, 0, 0.4);
+}
 
+.player-container audio {
+  align-self: center;
+}
 
 .img-container {
-
   position: relative;
+  height: 300px;
+  width: 300px;
   top: -50px;
   left: 50px;
 }
 
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.4);
+}
 
 h2 {
   font-size: 25px;
@@ -34,7 +54,7 @@ h2 {
 h3 {
   font-size: 20px;
   text-align: center;
-  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
   margin: 5px 0 0;
 }
 
@@ -46,6 +66,7 @@ h3 {
   margin: 40px 20px;
   height: 4px;
   width: 90%;
+  align-content: center;
 }
 
 .progress {
@@ -53,7 +74,7 @@ h3 {
   border-radius: 5px;
   height: 100%;
   /* change this to show progress */
-  width: 66%;
+  width: 0%;
   transition: width 0.1s linear;
 }
 
@@ -67,19 +88,31 @@ h3 {
 /* Controls */
 .player-controls {
   position: relative;
-  top: -15px;
-  left: 120px;
-  width: 200px;
+  align-items: center;
+  text-align: center;
 }
 
 .fas {
-  font-size: 30px;
-  color: rgb(129, 129, 129);
-  margin-right: 30px;
-
+  font-size: 25px;
+  color: #242323;
+  margin: 0px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s ease-in-out;
 }
 
+.fas:hover {
+  transform: scale(1.1);
+  filter: brightness(300%);
+}
 
+.fa-play {
+  font-size: 30px;
+}
+
+.fa-pause {
+  font-size: 30px;
+}
 
 .main-button {
   font-size: 40px;
@@ -88,8 +121,10 @@ h3 {
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-
+@media screen and (max-width: 400px) {
+  .player-container {
+    width: 95vw;
+  }
 
   .img-container {
     left: 29px;
